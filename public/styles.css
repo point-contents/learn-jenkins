@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+  --main-bg-color: #95c4e6;
+  --primary-color: #184568;
+  --secondary-color: #ffffff;
+}
+
+html {
+	background: var(--main-bg-color);
+}
+
+
+.main-grid-container{
+	display: grid;
+	grid-template-columns: repeat(2, minmax(200px, 1fr));
+	height: 90vh;
+	width: 100vw;
+}
+
+
+card {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	padding: clamp(0px, 25px, 100px);
+	margin: clamp(0px, 25px, 100px);
+	border-radius: 35px;
+	background: var(--secondary-color);
+	box-shadow: 24px 24px 48px rgba(174, 210, 236, 0.4),
+	    inset 12px 12px 24px #e7f2f9, inset -24px -24px 48px #b8d8ee;
+
+}
+
+
+card > a > img {
+	display: inline-block;
+	max-width: 100px;
+	max-height: 100%;
+	object-fit: contain;
+}
+
